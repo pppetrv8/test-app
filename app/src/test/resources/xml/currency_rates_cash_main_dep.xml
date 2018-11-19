@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+<trader>
+    <name>Head office</name>
+    <description>Head office</description>
+    <time>time</time>
+    <number>2</number>
+    <id>7</id>
+    <longitude>27.54053</longitude>
+    <lattitude>53.911068</lattitude>
+    <national_currency>BYN</national_currency>
+    <previous_time>19.11.2018 09:00</previous_time>
+    <next_time></next_time>
+    <from_time>19.11.2018 11:30
+        <rates>
+            <item>
+                <buy_good_id>840</buy_good_id>
+                <sell_good_id>933</sell_good_id>
+                <buy_amount>2.10400</buy_amount>
+                <sell_amount>2.11400</sell_amount>
+                <sell_amount_delta>.002</sell_amount_delta>
+                <buy_amount_delta>-.001</buy_amount_delta>
+                <buy_good_name>USD</buy_good_name>
+                <sell_good_name>BYN</sell_good_name>
+                <buy_good_title>US dollar</buy_good_title>
+                <sell_good_title>Belarusian ruble</sell_good_title>
+                <buy_good_scale>1</buy_good_scale>
+                <item_order>1</item_order>
+            </item>
+            <item>
+                <buy_good_id>978</buy_good_id>
+                <sell_good_id>933</sell_good_id>
+                <buy_amount>2.39800</buy_amount>
+                <sell_amount>2.41500</sell_amount>
+                <sell_amount_delta>.005</sell_amount_delta>
+                <buy_amount_delta>.001</buy_amount_delta>
+                <buy_good_name>EUR</buy_good_name>
+                <sell_good_name>BYN</sell_good_name>
+                <buy_good_title>Euro</buy_good_title>
+                <sell_good_title>Belarusian ruble</sell_good_title>
+                <buy_good_scale>1</buy_good_scale>
+                <item_order>2</item_order>
+            </item>
+            <item>
+                <buy_good_id>643</buy_good_id>
+                <sell_good_id>933</sell_good_id>
+                <buy_amount>.03170</buy_amount>
+                <sell_amount>.03203</sell_amount>
+                <sell_amount_delta>.00004</sell_amount_delta>
+                <buy_amount_delta>-.00002</buy_amount_delta>
+                <buy_good_name>RUB</buy_good_name>
+                <sell_good_name>BYN</sell_good_name>
+                <buy_good_title>Russian ruble</buy_good_title>
+                <sell_good_title>Belarusian ruble</sell_good_title>
+                <buy_good_scale>100</buy_good_scale>
+                <item_order>3</item_order>
+            </item>
+            <item>
+                <buy_good_id>840</buy_good_id>
+                <sell_good_id>643</sell_good_id>
+                <buy_amount>65.8</buy_amount>
+                <sell_amount>66.6</sell_amount>
+                <sell_amount_delta>0</sell_amount_delta>
+                <buy_amount_delta>0</buy_amount_delta>
+                <buy_good_name>USD</buy_good_name>
+                <sell_good_name>RUB</sell_good_name>
+                <buy_good_title>US dollar</buy_good_title>
+                <sell_good_title>Russian ruble</sell_good_title>
+                <buy_good_scale>1</buy_good_scale>
+                <item_order>4</item_order>
+            </item>
+            <item>
+                <buy_good_id>978</buy_good_id>
+                <sell_good_id>643</sell_good_id>
+                <buy_amount>74.97</buy_amount>
+                <sell_amount>76.1</sell_amount>
+                <sell_amount_delta>.06</sell_amount_delta>
+                <buy_amount_delta>.07</buy_amount_delta>
+                <buy_good_name>EUR</buy_good_name>
+                <sell_good_name>RUB</sell_good_name>
+                <buy_good_title>Euro</buy_good_title>
+                <sell_good_title>Russian ruble</sell_good_title>
+                <buy_good_scale>1</buy_good_scale>
+                <item_order>5</item_order>
+            </item>
+            <item>
+                <buy_good_id>978</buy_good_id>
+                <sell_good_id>840</sell_good_id>
+                <buy_amount>1.136</buy_amount>
+                <sell_amount>1.146</sell_amount>
+                <sell_amount_delta>.001</sell_amount_delta>
+                <buy_amount_delta>.001</buy_amount_delta>
+                <buy_good_name>EUR</buy_good_name>
+                <sell_good_name>USD</sell_good_name>
+                <buy_good_title>Euro</buy_good_title>
+                <sell_good_title>US dollar</sell_good_title>
+                <buy_good_scale>1</buy_good_scale>
+                <item_order>6</item_order>
+            </item>
+            <item>
+                <buy_good_id>826</buy_good_id>
+                <sell_good_id>933</sell_good_id>
+                <buy_amount>2.68000</buy_amount>
+                <sell_amount>2.76100</sell_amount>
+                <sell_amount_delta>.002</sell_amount_delta>
+                <buy_amount_delta>-.001</buy_amount_delta>
+                <buy_good_name>GBP</buy_good_name>
+                <sell_good_name>BYN</sell_good_name>
+                <buy_good_title>Pound sterling</buy_good_title>
+                <sell_good_title>Belarusian ruble</sell_good_title>
+                <buy_good_scale>1</buy_good_scale>
+                <item_order>7</item_order>
+            </item>
+            <item>
+                <buy_good_id>980</buy_good_id>
+                <sell_good_id>933</sell_good_id>
+                <buy_amount>.06970</buy_amount>
+                <sell_amount>.07610</sell_amount>
+                <sell_amount_delta>0</sell_amount_delta>
+                <buy_amount_delta>0</buy_amount_delta>
+                <buy_good_name>UAH</buy_good_name>
+                <sell_good_name>BYN</sell_good_name>
+                <buy_good_title>Ukrainian grivn</buy_good_title>
+                <sell_good_title>Belarusian ruble</sell_good_title>
+                <buy_good_scale>100</buy_good_scale>
+                <item_order>8</item_order>
+            </item>
+            <item>
+                <buy_good_id>985</buy_good_id>
+                <sell_good_id>933</sell_good_id>
+                <buy_amount>.54110</buy_amount>
+                <sell_amount>.56200</sell_amount>
+                <sell_amount_delta>.0005</sell_amount_delta>
+                <buy_amount_delta>-.0003</buy_amount_delta>
+                <buy_good_name>PLN</buy_good_name>
+                <sell_good_name>BYN</sell_good_name>
+                <buy_good_title>Polish zloty</buy_good_title>
+                <sell_good_title>Belarusian ruble</sell_good_title>
+                <buy_good_scale>10</buy_good_scale>
+                <item_order>9</item_order>
+            </item>
+            <item>
+                <buy_good_id>756</buy_good_id>
+                <sell_good_id>933</sell_good_id>
+                <buy_amount>2.01000</buy_amount>
+                <sell_amount>2.11800</sell_amount>
+                <sell_amount_delta>.002</sell_amount_delta>
+                <buy_amount_delta>-.001</buy_amount_delta>
+                <buy_good_name>CHF</buy_good_name>
+                <sell_good_name>BYN</sell_good_name>
+                <buy_good_title>Swiss frank</buy_good_title>
+                <sell_good_title>Belarusian ruble</sell_good_title>
+                <buy_good_scale>1</buy_good_scale>
+                <item_order>10</item_order>
+            </item>
+            <item>
+                <buy_good_id>826</buy_good_id>
+                <sell_good_id>840</sell_good_id>
+                <buy_amount>1.27</buy_amount>
+                <sell_amount>1.31</sell_amount>
+                <sell_amount_delta>0</sell_amount_delta>
+                <buy_amount_delta>0</buy_amount_delta>
+                <buy_good_name>GBP</buy_good_name>
+                <sell_good_name>USD</sell_good_name>
+                <buy_good_title>Pound sterling</buy_good_title>
+                <sell_good_title>US dollar</sell_good_title>
+                <buy_good_scale>1</buy_good_scale>
+                <item_order>11</item_order>
+            </item>
+            <item>
+                <buy_good_id>840</buy_good_id>
+                <sell_good_id>756</sell_good_id>
+                <buy_amount>.995</buy_amount>
+                <sell_amount>1.05</sell_amount>
+                <sell_amount_delta>0</sell_amount_delta>
+                <buy_amount_delta>0</buy_amount_delta>
+                <buy_good_name>USD</buy_good_name>
+                <sell_good_name>CHF</sell_good_name>
+                <buy_good_title>US dollar</buy_good_title>
+                <sell_good_title>Swiss frank</sell_good_title>
+                <buy_good_scale>1</buy_good_scale>
+                <item_order>12</item_order>
+            </item>
+            <item>
+                <buy_good_id>840</buy_good_id>
+                <sell_good_id>985</sell_good_id>
+                <buy_amount>3.75</buy_amount>
+                <sell_amount>3.9</sell_amount>
+                <sell_amount_delta>0</sell_amount_delta>
+                <buy_amount_delta>0</buy_amount_delta>
+                <buy_good_name>USD</buy_good_name>
+                <sell_good_name>PLN</sell_good_name>
+                <buy_good_title>US dollar</buy_good_title>
+                <sell_good_title>Polish zloty</sell_good_title>
+                <buy_good_scale>1</buy_good_scale>
+                <item_order>13</item_order>
+            </item>
+            <item>
+                <buy_good_id>840</buy_good_id>
+                <sell_good_id>980</sell_good_id>
+                <buy_amount>27.7</buy_amount>
+                <sell_amount>30.2</sell_amount>
+                <sell_amount_delta>0</sell_amount_delta>
+                <buy_amount_delta>0</buy_amount_delta>
+                <buy_good_name>USD</buy_good_name>
+                <sell_good_name>UAH</sell_good_name>
+                <buy_good_title>US dollar</buy_good_title>
+                <sell_good_title>Ukrainian grivn</sell_good_title>
+                <buy_good_scale>1</buy_good_scale>
+                <item_order>14</item_order>
+            </item>
+        </rates>
+    </from_time>
+</trader>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="action_settings">Settings</string>
+    <string name="rates_screen_title">Currency Rates</string>
+
+    <!-- Name currency -->
+    <string name="BYR">Belarusian ruble</string>
+    <string name="AUD">Australian dollar</string>
+    <string name="GBP">British pound</string>
+    <string name="DKK">Danish krone</string>
+    <string name="CAD">Canadian dollar</string>
+    <string name="CZK">Czech crown</string>
+    <string name="EEK">Estonian kroon</string>
+    <string name="EUR">Euro</string>
+    <string name="JPY">Japanese yen</string>
+    <string name="LVL">Latvian lats</string>
+    <string name="LTL">Lithuanian litas</string>
+    <string name="MXN">Mexican peso</string>
+    <string name="NZD">Newzealand dollar</string>
+    <string name="NOK">Norwegian krone</string>
+    <string name="PLN">Polish zloty</string>
+    <string name="RUB">Russian ruble</string>
+    <string name="SGD">Singapore dollar</string>
+    <string name="ZAR">South African rand</string>
+    <string name="SEK">Swedish krona</string>
+    <string name="CHF">Swiss franc</string>
+    <string name="UAH">Ukrainian hryvnia</string>
+    <string name="USD">US dollar</string>
+    <string name="ISK">Icelandic crown</string>
+    <string name="BGN">Bulgarian lev</string>
+    <string name="KZT">Kazakh tange</string>
+    <string name="KWD">Kuwaiti dinar</string>
+    <string name="KGS">Kirghiz som</string>
+    <string name="MDL">Moldavian ley</string>
+    <string name="TRL">Turkish lira</string>
+    <string name="XDR">SDR</string>
+
+    <string name="currency_rates_title">Currency Rates</string>
+
+</resources>

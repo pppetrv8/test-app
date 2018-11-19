@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="action_settings">Settings</string>
+    <string name="rates_screen_title">Курсы валют</string>
+
+    <!-- name currency -->
+    <string name="BYR">Белорусский рубль</string>
+    <string name="AUD">Австралийский доллар</string>
+    <string name="GBP">Британский фунт</string>
+    <string name="DKK">Датская крона</string>
+    <string name="CAD">Канадский доллар</string>
+    <string name="CZK">Чешская крона</string>
+    <string name="EEK">Эстонская крона</string>
+    <string name="EUR">Евро</string>
+    <string name="JPY">Японская йена</string>
+    <string name="LVL">Латвийский лат</string>
+    <string name="LTL">Литовский лит</string>
+    <string name="MXN">Мексиканский песо</string>
+    <string name="NZD">Новозеландский доллар</string>
+    <string name="NOK">Норвежская крона</string>
+    <string name="PLN">Польский злотый</string>
+    <string name="RUB">Российский рубль</string>
+    <string name="SGD">Сингапурский доллар</string>
+    <string name="ZAR">Южноафриканский ранд</string>
+    <string name="SEK">Шведская крона</string>
+    <string name="CHF">Швейцарский франк</string>
+    <string name="UAH">Украинская гривна</string>
+    <string name="USD">Американский доллар</string>
+    <string name="ISK">Исландская крона</string>
+    <string name="BGN">Болгарский лев</string>
+    <string name="KZT">Казахский тенге</string>
+    <string name="KWD">Кувейтский динар</string>
+    <string name="KGS">Кыргызский сом</string>
+    <string name="MDL">Молдавский лей</string>
+    <string name="TRL">Турецкая лира</string>
+    <string name="XDR">Единица СДР</string>
+
+    <string name="currency_rates_title">Курсы валют</string>
+
+</resources>

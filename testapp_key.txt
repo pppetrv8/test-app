@@ -1,0 +1,2 @@
+﻿alias: test
+key: hx87d234diwefu-test
