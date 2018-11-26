@@ -9,8 +9,8 @@ object Constants {
     const val WIN_1251 = "Windows-1251"
     const val TLS_VER = "TLSv1.2"
 
-    const val SERVER_LINK = "https://raw.githubusercontent.com"
-    const val SERVICE_PATH = "/pppetrv8/testapp/master/test_rates.xml"
+    const val SERVER_LINK = "https://pppetrv8.github.io"
+    const val SERVICE_PATH = "/test_xml_link/test_rates.xml"
 
     const val CURRENCY_MAIN_TRADER = 7
 
