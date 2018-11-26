@@ -1,18 +1,13 @@
 package com.example.pppetrv.testapplication.util;
 
-import com.example.pppetrv.testapplication.net.simplexml.CustomSimpleXmlConverterFactory;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.Serializable;
-
-import timber.log.Timber;
 
 public class TestUtils {
 

@@ -6,12 +6,13 @@ import com.example.pppetrv.testapplication.util.TestUtils
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.mock.BehaviorDelegate
+import retrofit2.mock.Calls
 
-class TestServiceApi(private var delegate: BehaviorDelegate<ServiceApi>): ServiceApi {
+class TestServiceApi: ServiceApi {
 
     override fun getCurrencyRates(trader: Int): Call<BankDepartmentDto> {
         val response = Response.success(200, getBankDepartmentDto())
-        return delegate.returningResponse(response).getCurrencyRates()
+        return Calls.response<BankDepartmentDto>(response)
     }
 
     private fun getBankDepartmentDto(): BankDepartmentDto {

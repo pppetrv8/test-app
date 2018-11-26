@@ -1,16 +1,16 @@
 package com.example.pppetrv.testapplication.util.rx
 
 import io.reactivex.Scheduler
-import io.reactivex.schedulers.TestScheduler
+import io.reactivex.schedulers.Schedulers
 
 class TestSchedulerProvider(private val scheduler: Scheduler) : SchedulerProvider {
 
     override fun computation(): Scheduler {
-        return scheduler
+        return Schedulers.computation()
     }
 
     override fun io(): Scheduler {
-        return scheduler
+        return Schedulers.io()
     }
 
     override fun ui(): Scheduler {

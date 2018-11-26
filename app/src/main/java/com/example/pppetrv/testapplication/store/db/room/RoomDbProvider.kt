@@ -12,11 +12,15 @@ import com.example.pppetrv.testapplication.util.Constants.ROOM_DATABASE_NAME
 import io.reactivex.Flowable
 import javax.inject.Inject
 
-class RoomDbProvider @Inject constructor() : DbProvider() {
+open class RoomDbProvider @Inject constructor() : DbProvider() {
 
-    private var appDB: AppDatabase? = null
+    var appDB: AppDatabase? = null
 
     init {
+        initAppDb()
+    }
+
+    open fun initAppDb() {
         appDB = Room.databaseBuilder(App.appInstance as Context,
                 AppDatabase::class.java, ROOM_DATABASE_NAME).build()
     }
@@ -34,13 +38,13 @@ class RoomDbProvider @Inject constructor() : DbProvider() {
         var rateEntityListFlowableResult: Flowable<List<CurrencyRate>>? = null
         if (appDB != null && appDB?.currencyRateDao != null) {
             val rateEntityListFlowable = appDB?.currencyRateDao?.getCurrencyRates(bankId)
-            rateEntityListFlowableResult = rateEntityListFlowable?.map { list ->
+            rateEntityListFlowableResult = rateEntityListFlowable?.flatMap { list: List<CurrencyRateEntity> ->
                 val result = ArrayList<CurrencyRate>()
-                for (i in list) {
-                    val rate = i.toCurrencyRate()
+                for (item in list) {
+                    val rate = item.toCurrencyRate()
                     result.add(rate)
                 }
-                result
+                Flowable.just(result)
             }
         }
         return rateEntityListFlowableResult

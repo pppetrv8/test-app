@@ -45,7 +45,7 @@ data class CurrencyRateEntity(
 ) {
     @Ignore
     fun toCurrencyRate(): CurrencyRate {
-        var curRate = CurrencyRate()
+        val curRate = CurrencyRate()
         curRate.bankId = bankId
         curRate.buyGoodId = buyGoodId
         curRate.sellGoodId = sellGoodId

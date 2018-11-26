@@ -20,18 +20,15 @@ class CurrencyRate : Cloneable, Item {
     var selected: Boolean = false
 
     override fun getId(): Long {
-        return bankId xor buyGoodId.toLong() xor sellGoodId.toLong()
+        var buyGoodNameCode: Long = 0
+        var sellGoodNameCode: Long = 0
+        buyGoodName?.let { buyGoodNameCode = it.hashCode().toLong() }
+        sellGoodName?.let { sellGoodNameCode = it.hashCode().toLong() }
+        return bankId xor buyGoodNameCode xor sellGoodNameCode
     }
 
     override fun hashCode(): Int {
-        var code = super.hashCode()
-        if (buyGoodName != null) {
-            code = code xor buyGoodName?.hashCode() as Int
-        }
-        if (sellGoodName != null) {
-            code = code xor sellGoodName?.hashCode() as Int
-        }
-        return code
+        return getId().toInt()
     }
 
     override fun equals(obj: Any?): Boolean {
@@ -59,5 +56,22 @@ class CurrencyRate : Cloneable, Item {
             Timber.e(e)
         }
         return CurrencyRate()
+    }
+
+    override fun toString(): String {
+        return "\nid = ${getId()}" +
+                ", $buyGoodName/$sellGoodName" +
+                ", buyGoodId = $buyGoodId" +
+                ", sellGoodId = $sellGoodId" +
+                ", bankId = $bankId" +
+                ", buyAmount = $buyAmount" +
+                ", sellAmount = $sellAmount" +
+                ", sellAmountDelta = $sellAmountDelta" +
+                ", buyAmountDelta = $buyAmountDelta" +
+                ", buyGoodTitle: $buyGoodTitle" +
+                ", sellGoodTitle: $sellGoodTitle" +
+                ", itemOrder = $itemOrder" +
+                ", buyGoodScale = $buyGoodScale" +
+                ", selected: $selected"
     }
 }
