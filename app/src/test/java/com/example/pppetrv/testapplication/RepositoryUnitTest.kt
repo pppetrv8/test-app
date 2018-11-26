@@ -14,6 +14,7 @@ import com.example.pppetrv.testapplication.net.dto.BankDepartmentDto
 import com.example.pppetrv.testapplication.util.TestUtils
 import io.reactivex.Flowable
 import io.reactivex.subscribers.TestSubscriber
+import java.util.concurrent.TimeUnit
 
 class RepositoryUnitTest: BaseTest() {
 
@@ -45,18 +46,21 @@ class RepositoryUnitTest: BaseTest() {
     @Test
     fun getCurrencyRatesNetTest() {
 
-        System.out.println("started checkBankDepartmentNetTest...")
+        println("started checkBankDepartmentNetTest...")
 
         val testSubscriber = TestSubscriber<List<CurrencyRate>>()
-        getCurrencyRates(bankId).subscribeOn(schedulerProvider.io())
+        repository.getCurrencyRates(bankId, false).subscribeOn(schedulerProvider.io())
            .observeOn(schedulerProvider.ui())
            .subscribe(testSubscriber)
 
+        testSubscriber.awaitDone(2, TimeUnit.MINUTES)
+
         testSubscriber.assertNoErrors()
+
         checkDataItemsCount(testSubscriber)
 
         val values = testSubscriber.values()
-        System.out.println("ended checkBankDepartmentNetTest, data: $values")
+        println("ended checkBankDepartmentNetTest, data: $values")
     }
 
     private fun checkDataItemsCount(testSubscriber: TestSubscriber<List<CurrencyRate>>) {
@@ -66,7 +70,6 @@ class RepositoryUnitTest: BaseTest() {
         }
         val values = testSubscriber.values()
         assert(values.size > 0 && values[0] != null && values[0].size == count)
-
     }
 
     private fun getBankDepartmentDto(): BankDepartmentDto {

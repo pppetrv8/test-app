@@ -9,13 +9,14 @@ import retrofit2.mock.BehaviorDelegate
 
 class TestServiceApi(private var delegate: BehaviorDelegate<ServiceApi>): ServiceApi {
 
-    override fun getCurrencyRates(trader: Int, service: Int, lang: String): Call<BankDepartmentDto> {
+    override fun getCurrencyRates(trader: Int): Call<BankDepartmentDto> {
         val response = Response.success(200, getBankDepartmentDto())
         return delegate.returningResponse(response).getCurrencyRates()
     }
 
     private fun getBankDepartmentDto(): BankDepartmentDto {
         val bankDto = TestUtils().readXml("xml/currency_rates_cash_main_dep.xml", BankDepartmentDto::class.java)
+        println("getBankDepartmentDto: $bankDto")
         return bankDto
     }
 
