@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit
 object TimeUtil {
 
     const val DATE_TIMESTAMP = "HH:mm:ss yyyy-MMMM-dd"
+    const val SERVER_DATE_TIMESTAMP = "yyyy-MM-dd'T'HH:mm:ss"
     const val DATE_FILENAME_FORMAT = "yyyyMMddHHmmSSS"
     const val DATE_SIMPLE_FILENAME_FORMAT = "dd-MMMM-yyyy HH-mm-ss"
     const val DATE_DROPBOX_FOLDER_NAME_FORMAT = "yyyy_MM_dd_HH_mm"
