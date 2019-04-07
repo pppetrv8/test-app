@@ -16,7 +16,7 @@ class LocationListToCSVTest {
 
     @Before
     public fun prepare() {
-        locationsStr = TestUtils().readString("text/gps_path_crossroads_test.txt")
+        locationsStr = TestUtils().readString("text/piatroushina_traetckoe_predm.txt")
     }
 
     @Test
